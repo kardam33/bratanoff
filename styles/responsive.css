@@ -1,5 +1,4 @@
 @media only screen and (max-width: 1100px) {
-  
   div.shell {
     width: 100%;
   }
@@ -87,7 +86,7 @@
   }
 
   .bratanoff-shimmer {
-   display: none;
+    display: none;
   }
 
   div.bratanoff-shimmer-mobile {
@@ -100,15 +99,15 @@
     font-family: "Lato";
     font-weight: 300;
     font-size: 18px;
-    padding: 0 110px 0 130px;
+    padding: 0 70px 0 100px;
     text-align: center;
     display: inline;
-    margin-left: 1em;
+    margin-left: 0em;
     margin-bottom: 0;
   }
 
   .shimmer-mobile span {
-  margin-left: 5em;
+    margin-left: 2.5em;
   }
 
   .shimmer-mobile {
@@ -189,7 +188,6 @@
       background-position: top right;
     }
   }
-
 
   nav.menu {
     height: auto;
@@ -305,7 +303,6 @@
 }
 
 @media only screen and (max-width: 375px) {
-
   div.bratanoff-shimmer-mobile {
     display: inline-block;
     font-size: 11px;
@@ -324,13 +321,11 @@
   }
 
   .shimmer-mobile span {
-  margin-left: 4em;
+    margin-left: 4em;
   }
-
 }
 
-@media only screen and (max-width: 375px) {
-
+@media only screen and (max-width: 373px) {
   div.bratanoff-shimmer-mobile {
     display: inline-block;
     font-size: 11px;
@@ -349,7 +344,6 @@
   }
 
   .shimmer-mobile span {
-  margin-left: 2.5em;
+    margin-left: 2.5em;
   }
-
 }
