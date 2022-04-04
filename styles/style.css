@@ -1,7 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Ledger&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ledger&display=swap');
 
 body {
   background: #f9f9fb;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 .shell {
@@ -17,10 +19,8 @@ body {
   Shimmer effect
 \* -------------------------------------------------------------------- */
 
-
-
 .shimmer {
-  font-family: "Lato";
+  font-family: 'Lato';
   font-weight: 300;
   padding: 0 140px 0 110px;
   font-size: 2em;
@@ -139,7 +139,7 @@ body {
 .menu-ul a {
   color: #fff;
   text-decoration: none;
-  font-family: "Arial";
+  font-family: 'Arial';
 }
 
 .menu a:visited {
@@ -334,7 +334,7 @@ img {
 #my-form-status {
   font-size: 15px;
   text-transform: uppercase;
-  font-family: "Arial", sans-serif;
+  font-family: 'Arial', sans-serif;
   font-weight: 600;
   color: green;
   text-align: center;
@@ -352,7 +352,7 @@ textarea {
   margin-bottom: 10px;
 }
 
-input[type="submit"] {
+input[type='submit'] {
   background-color: rgb(160, 1, 1);
   color: white;
   padding: 12px 20px;
@@ -362,7 +362,7 @@ input[type="submit"] {
   text-transform: uppercase;
 }
 
-input[type="submit"]:hover {
+input[type='submit']:hover {
   background-color: red;
 }
 
@@ -395,7 +395,7 @@ label {
 .bratanoff-presentation {
   padding: 40px 100px;
   border-radius: 8px;
-  font-family: "Ledger", serif;
+  font-family: 'Ledger', serif;
 }
 
 /* -------------------------------------------------------------------- *\
@@ -435,7 +435,7 @@ label {
   margin-top: 138px;
   cursor: pointer;
   max-width: 80%;
-  font-family: "Arial";
+  font-family: 'Arial';
   background-color: grey;
   font-size: 12px;
   color: #fff;
@@ -506,7 +506,7 @@ label {
   width: 1px;
   height: 1px;
   background: white;
-  content: "";
+  content: '';
   bottom: 10px;
   left: 50%;
   top: 95%;
@@ -549,7 +549,7 @@ label {
 
 .rhombus-list-style {
   list-style-type: none;
-  list-style-image: url("../images/rhombus-icon.png");
+  list-style-image: url('../images/rhombus-icon.png');
 }
 
 .rhombus-list-style li {
@@ -611,7 +611,7 @@ label {
 }
 
 .protect-your-rights {
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-weight: 400;
   height: 100vh;
   background-repeat: no-repeat;
@@ -986,7 +986,7 @@ label {
   margin: 0;
   color: rgb(204, 204, 204);
   padding-top: 30px;
-  font-family: "Arial";
+  font-family: 'Arial';
 }
 
 .copyright a {
