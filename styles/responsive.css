@@ -251,10 +251,12 @@
     padding: 0;
   }
 
-  article.bratanoff-presentation {
-    border-radius: 0;
-    padding: 40px 60px;
-    text-align: center;
+  .presentation {
+    background: none;
+  }
+
+  .bratanoff-presentation {
+    margin: 0;
   }
 
   div.laws-wrapper {
