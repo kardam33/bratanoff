@@ -108,51 +108,18 @@ body {
   }
 }
 
-.menu {
-  color: #000;
-  height: 50px;
-  width: 100%;
-  background: #000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: sticky;
-  top: 0;
-  z-index: 1;
+.navbar-brand img {
+  width: 100px;
 }
 
-.contact li a {
-  text-decoration: none;
-}
-
-.menu-ul {
-  display: flex;
-  justify-content: flex-end;
+.navbar-dark .navbar-nav a.nav-link {
+  color: #fff;
   text-transform: uppercase;
-  color: #fff;
-  list-style: none;
-  align-items: center;
-  margin-right: 1em;
-  font-weight: 600;
+  transition: 0.4s;
 }
 
-.menu-ul a {
-  color: #fff;
-  text-decoration: none;
-  font-family: 'Arial';
-}
-
-.menu a:visited {
-  color: #fff;
-}
-
-.menu-ul li + li {
-  padding-left: 30px;
-}
-
-.menu-ul li a:hover {
-  color: #c9210b;
-  cursor: pointer;
+.navbar-dark .navbar-nav a.nav-link:hover {
+  color: red;
 }
 
 .header {
