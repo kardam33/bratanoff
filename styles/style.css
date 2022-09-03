@@ -109,7 +109,7 @@ body {
 }
 
 .navbar {
-  position: fixed !important;
+
   z-index: 100;
   top: 0;
   width: 100%;
@@ -118,6 +118,7 @@ body {
 .navbar-nav {
   padding-right: 12%;
 }
+
 
 .navbar-brand img {
   width: 100px;
