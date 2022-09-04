@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ledger&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
 
 body {
   background: #f9f9fb;
@@ -32,30 +33,24 @@ body {
 .shimmer {
   text-align: center;
   color: rgba(255, 255, 255, 0.1);
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#222),
-    to(#222),
-    color-stop(0.5, #fff)
-  );
-  background: -moz-gradient(
-    linear,
-    left top,
-    right top,
-    from(#222),
-    to(#222),
-    color-stop(0.5, #fff)
-  );
-  background: gradient(
-    linear,
-    left top,
-    right top,
-    from(#222),
-    to(#222),
-    color-stop(0.5, #fff)
-  );
+  background: -webkit-gradient(linear,
+      left top,
+      right top,
+      from(#222),
+      to(#222),
+      color-stop(0.5, #fff));
+  background: -moz-gradient(linear,
+      left top,
+      right top,
+      from(#222),
+      to(#222),
+      color-stop(0.5, #fff));
+  background: gradient(linear,
+      left top,
+      right top,
+      from(#222),
+      to(#222),
+      color-stop(0.5, #fff));
   -webkit-background-size: 125px 100%;
   -moz-background-size: 125px 100%;
   background-size: 125px 100%;
@@ -75,41 +70,49 @@ body {
   background-position: 0 0;
   background-color: #222;
 }
+
 @-moz-keyframes shimmer {
   0% {
     background-position: top left;
   }
+
   100% {
     background-position: top right;
   }
 }
+
 @-webkit-keyframes shimmer {
   0% {
     background-position: top left;
   }
+
   100% {
     background-position: top right;
   }
 }
+
 @-o-keyframes shimmer {
   0% {
     background-position: top left;
   }
+
   100% {
     background-position: top right;
   }
 }
+
 @keyframes shimmer {
   0% {
     background-position: top left;
   }
+
   100% {
     background-position: top right;
   }
 }
 
 .navbar {
-
+  position: sticky !important;
   z-index: 100;
   top: 0;
   width: 100%;
@@ -119,6 +122,11 @@ body {
   padding-right: 12%;
 }
 
+@media screen and (max-width: 991px) {
+  .navbar-nav {
+    padding-right: 3%;
+  }
+}
 
 .navbar-brand img {
   width: 100px;
@@ -128,6 +136,9 @@ body {
   color: #fff;
   text-transform: uppercase;
   transition: 0.4s;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .navbar-dark .navbar-nav a.nav-link:hover {
@@ -152,8 +163,6 @@ img {
 
 .slogan {
   bottom: 10px;
-  width: 90%;
-  display: inline-block;
   text-align: center;
   color: #000;
   font-family: Arial, Helvetica, sans-serif;
@@ -162,6 +171,7 @@ img {
 .slogan h1 {
   margin: 0 auto;
   font-size: 18px;
+  font-weight: 600;
 }
 
 .avatar {
@@ -212,6 +222,7 @@ img {
   from {
     transform: translateX(0%);
   }
+
   to {
     transform: translateX(-50%);
   }
@@ -261,30 +272,43 @@ img {
 	Contact form
 \* -------------------------------------------------------------------- */
 
+.contact-details {
+  text-align: center;
+}
+
+.contact-details h3,
+.contact-details h4 {
+  font-size: 20px;
+}
+
+.contact-details h4 {
+  font-weight: normal;
+}
+
 .contact {
   color: #000;
   background: #ddd848;
   border-radius: 8px;
-  max-width: 30%;
-  margin-left: 3em;
+  margin-left: 3rem;
+}
+
+.contact a {
+  text-decoration: none;
 }
 
 .contact ul {
   list-style: none;
-  padding-left: 6%;
+  padding-left: 0;
 }
 
 .contact p,
 .address {
-  display: inline-block;
   font-size: 20px;
   vertical-align: middle;
-  padding-left: 10px;
-  margin: 10px 0;
 }
 
 .fa {
-  color: darkblue;
+  color: rgb(160, 1, 1);
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.15);
   align-items: center;
@@ -292,14 +316,43 @@ img {
   font-size: 24px;
 }
 
-.lawyer_name p {
-  text-transform: uppercase;
-  font-size: 20px;
+.fa-solid {
+  font-size: 18px;
+  color: rgb(160, 1, 1);
 }
 
-.address {
-  width: 80%;
+.phone-icon,
+.envelope-icon {
+  color: rgb(160, 1, 1);
+  font-style: normal;
 }
+
+
+.contact-details h3.lawyer_name {
+  text-transform: uppercase;
+  margin-top: 8px;
+  font-weight: normal;
+  font-size: 34px;
+  font-weight: 600;
+  font-family: 'Marck Script', cursive;
+  text-transform: uppercase;
+}
+
+.lawyer_name {
+  color: rgb(160, 1, 1);
+  font-weight: 600;
+  font-family: 'Marck Script', cursive;
+  text-transform: uppercase;
+}
+
+.names {
+  text-transform: uppercase;
+}
+
+.fa-user-tie {
+  color: #000;
+}
+
 
 .form {
   display: flex;
@@ -479,6 +532,7 @@ label {
 .wrap .content {
   opacity: 0;
 }
+
 .wrap:before {
   position: absolute;
   width: 1px;
@@ -507,6 +561,7 @@ label {
   z-index: 1;
   background: #fff;
 }
+
 .wrap.active:before {
   height: 160em;
   width: 2000px;
@@ -518,6 +573,7 @@ label {
   -webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
+
 .wrap.active .content {
   position: relative;
   z-index: 1;
@@ -799,6 +855,7 @@ label {
     opacity: 0;
     visibility: hidden;
   }
+
   0.4%,
   4.7619% {
     -webkit-transform: translateY(-100%) scale(0.7);
@@ -806,6 +863,7 @@ label {
     opacity: 0.4;
     visibility: visible;
   }
+
   5.1619%,
   9.52381% {
     -webkit-transform: translateY(0) scale(1);
@@ -813,6 +871,7 @@ label {
     opacity: 1;
     visibility: visible;
   }
+
   9.92381%,
   14.28571% {
     -webkit-transform: translateY(100%) scale(0.7);
@@ -820,12 +879,14 @@ label {
     opacity: 0.4;
     visibility: visible;
   }
+
   14.68571% {
     -webkit-transform: translateY(100%) scale(0.5);
     transform: translateY(100%) scale(0.5);
     opacity: 0;
     visibility: visible;
   }
+
   100% {
     -webkit-transform: translateY(100%) scale(0.5);
     transform: translateY(100%) scale(0.5);
@@ -841,6 +902,7 @@ label {
     opacity: 0;
     visibility: hidden;
   }
+
   0.4%,
   4.7619% {
     -webkit-transform: translateY(-100%) scale(0.7);
@@ -848,6 +910,7 @@ label {
     opacity: 0.4;
     visibility: visible;
   }
+
   5.1619%,
   9.52381% {
     -webkit-transform: translateY(0) scale(1);
@@ -855,6 +918,7 @@ label {
     opacity: 1;
     visibility: visible;
   }
+
   9.92381%,
   14.28571% {
     -webkit-transform: translateY(100%) scale(0.7);
@@ -862,12 +926,14 @@ label {
     opacity: 0.4;
     visibility: visible;
   }
+
   14.68571% {
     -webkit-transform: translateY(100%) scale(0.5);
     transform: translateY(100%) scale(0.5);
     opacity: 0;
     visibility: visible;
   }
+
   100% {
     -webkit-transform: translateY(100%) scale(0.5);
     transform: translateY(100%) scale(0.5);
