@@ -12,22 +12,43 @@ body {
   margin: auto;
 }
 
-/* -------------------------------------------------------------------- *\
-  Menu (NAV)
-\* -------------------------------------------------------------------- */
+
+.short-bio {
+  position: relative;
+}
 
 /* -------------------------------------------------------------------- *\
   Shimmer effect
 \* -------------------------------------------------------------------- */
 
+
+
 .shimmer {
+  position: absolute;
+  top: -80px;
+  left: 50px;
   font-family: 'Lato';
   font-weight: 300;
-  padding: 0 140px 0 110px;
+
   font-size: 2em;
-  margin: 0 auto;
   display: inline;
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+
+  .shimmer {
+    left: 50%;
+    top: 50%;
+    position: static;
+    margin-bottom: 40px;
+    }
+
+  .bratanoff-shimmer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .shimmer {
@@ -208,10 +229,6 @@ img {
   background-repeat: no-repeat;
   padding: 100px 50px;
   color: #fff;
-}
-
-.bratanoff-shimmer-mobile {
-  display: none;
 }
 
 /* -------------------------------------------------------------------- *\
@@ -836,7 +853,6 @@ label {
   width: 100%;
   background: #7f7f7f;
   font-size: 20px;
-  height: 30vh;
   border-radius: 8px;
   padding: 30px 20px 16px 70px;
   text-align: center;
@@ -1000,8 +1016,12 @@ label {
 .fa-telegram-plane {
   color: #fff;
   border-radius: 50%;
-  padding: 5px 10px 0 3px;
-  background: #29a0dc;
+  width: 54px;
+  height: 54px;
+}
+
+.fa-telegram-plane:hover {
+  color: #29a0dc;
 }
 
 .social__media {

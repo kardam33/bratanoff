@@ -28,7 +28,7 @@
 
   div.avatar {
     width: 40%;
-    margin: 70px auto;
+    margin: 70px auto 40px;
   }
 
   section.contact {
@@ -83,10 +83,6 @@
 @media only screen and (max-width: 414px) {
   * {
     box-sizing: border-box;
-  }
-
-  .bratanoff-shimmer {
-    display: none;
   }
 
   div.bratanoff-shimmer-mobile {
