@@ -28,7 +28,7 @@
 
   div.avatar {
     width: 40%;
-    margin: 70px auto;
+    margin: 70px auto 40px;
   }
 
   section.contact {
@@ -83,10 +83,6 @@
 @media only screen and (max-width: 414px) {
   * {
     box-sizing: border-box;
-  }
-
-  .bratanoff-shimmer {
-    display: none;
   }
 
   div.bratanoff-shimmer-mobile {
@@ -233,7 +229,6 @@
   }
 
   div.avatar {
-    width: 80%;
     padding: 40px 0;
     margin: auto;
   }
@@ -251,10 +246,12 @@
     padding: 0;
   }
 
-  article.bratanoff-presentation {
-    border-radius: 0;
-    padding: 40px 60px;
-    text-align: center;
+  .presentation {
+    background: none;
+  }
+
+  .bratanoff-presentation {
+    margin: 0;
   }
 
   div.laws-wrapper {
