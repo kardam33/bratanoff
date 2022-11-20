@@ -24,13 +24,11 @@ body {
 
 
 .shimmer {
-  position: absolute;
-  top: -80px;
-  left: 50px;
+  text-align: center;
   font-family: 'Lato';
   font-weight: 300;
 
-  font-size: 2em;
+  font-size: 2rem;
   display: inline;
   margin-bottom: 0;
 }
@@ -432,7 +430,7 @@ label {
 }
 
 .bratanoff-presentation {
-  margin: 10rem 0;
+  margin: 10rem 0 1rem;
   background: #ffc90e;
   font-size: 16px;
 }
@@ -448,7 +446,7 @@ label {
 \* -------------------------------------------------------------------- */
 
 .types-laws {
-  padding: 40em 50px 2em;
+  padding: 40em 50px 1.5em;
 }
 
 .laws-wrapper {
