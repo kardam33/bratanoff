@@ -1061,3 +1061,7 @@ label {
 .bio p {
   margin-bottom: 0 !important;
 }
+
+.last-shimmer {
+  margin-top: -5rem;
+}
