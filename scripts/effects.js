@@ -82,7 +82,7 @@ $(".about").click(function () {
 function YNconfirm() {
   if (
     window.confirm(
-      "Ще бъдете прехвърлен към друг сайт. Желаете ли да продължите?"
+      "Ще бъдете прехвърлени към друг сайт. Желаете ли да продължите?"
     )
   ) {
     window.location.href = "https://lex.bg/laws/tree/laws";
